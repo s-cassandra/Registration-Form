@@ -1,0 +1,87 @@
+/* Body styling */
+body {
+  width: 100%;                /* full width of the viewport (visible area of the web page on the user's screen) */
+  height: 100vh;              /* full viewport height */
+  margin: 0;                  /* removes default margin */
+  background-color: #1b1b32;
+  color: #f5f6f7;             /* text color */
+  font-family: Tahoma;        /* font style */
+  font-size: 16px;
+}
+
+/* styling for <h1> and <p> elements */
+h1, p {
+  margin: 1em auto;           /* adds space around the elements */
+  text-align: center;
+}
+
+form {
+  width: 60vw;                /* 60% of the viewport width */
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;             /* centres the form */
+  padding-bottom: 2em;        /* adds space at the bottom of the form */
+}
+
+/* styling for fieldset (grouping form elements) */
+fieldset {
+  border: none;              
+  padding: 2rem 0;            /* adds vertical padding */
+  border-bottom: 3px solid #3b3b4f; /* provides a border between fieldsets*/
+}
+
+/* removes bottom border for the last fieldset */
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+/* label styling */
+label {
+  display: block;               /*makes label take up full width*/
+  margin: 0.5rem 0;             /*adds space around labels*/
+}
+
+/*input, textarea, and select elements styling*/
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;            /*adds margin on top*/
+  width: 100%;                   /*makes input take up full width*/
+  min-height: 2em;
+}
+
+/*styling for input and textarea elements*/
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+/*inline class styling*/
+.inline {
+  width: unset;                   /*removes width restriction*/
+  margin: 0 0.5em 0 0;            /*adds margin to the right*/
+  vertical-align: middle;
+}
+
+/*submit button styling*/
+input[type="submit"] {
+  display: block;                  /*makes button block level*/
+  width: 60%;                      /*sets width to 60% of its parent*/
+  margin: 1em auto;                /*centers the button*/
+  height: 2em;
+  font-size: 1.1rem;               /*increases font size slightly*/
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+/*file input styling*/
+input[type="file"] {
+  padding: 1px 2px;                 /*adds padding inside the file input*/
+}
+
+/*styling the terms and conditions link*/
+label[for='terms-and-conditions'] a {
+  color: #dfdfe2;                   /*changes the link colour*/
+}
